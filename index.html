@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MenuProyecto</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="./img/logo.jpg" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <figure class="logo"
+        ><img src="./img/logotrans1.png" width="110rem" height="50rem" alt=""
+      /></figure>
+      <!-- navigation menu start -->
+      <nav class="navbar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#"> Inicio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Sobre Nosotros</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Testimonios</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a href="#" class="menu__link submenu-btn" data-toggle="sub-menu"
+              >Nuestros servicios
+              <i class="fa fa-angle-down plus" aria-hidden="true"></i
+            ></a>
+            <ul class="sub-menu">
+              <li class="menu-item item-sub">
+                <a href="#" class="menu__link menu__link--inside"
+                  >Deportes de Aventura</a
+                >
+              </li>
+              <li class="menu-item item-sub ps">
+                <a href="#" class="menu__link menu__link--inside"
+                  >Paseos turísticos</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item btn-position">
+            <a href="https://wa.me/910089718/?text=Estoy interesado en ti beibi." target="_blank">Contáctanos <i class="fab fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- navigation menu end -->
+
+
+      <div class="icons">
+        <!-- dark-light -->
+				<button class="switch" id="switch">
+					<span><i class="fa-solid fa-sun"></i></span>
+					<span><i class="fa-solid fa-moon"></i></span>
+				</button>
+        <!-- dark-light -->
+        <div class="fa-solid fa-credit-card" id="cart-btn"></div>
+
+        <div class="login" id="login-btn">
+          <i class="fa-regular fa-user"></i>
+        </div>
+
+        <div class="boton-menu" id="menu-btn">
+          <input id="abrir-cerrar" type="checkbox" value="" />
+          <label for="abrir-cerrar" class="toggle-button"> </label>
+        </div>
+      </div>
+      <!-- .icons-->
+      <div class="shopping-cart">
+        <h2>Precio de los deportes</h2>
+        <div class="box">
+          <img class="img-cart" src="./img/canotaje.JPG" alt="canotaje" />
+          <div class="content">
+            <h3>Canotaje</h3>
+            <span class="price">s/35.00 por persona</span>
+          </div>
+        </div>
+        <!--.box-->
+
+        <div class="box">
+          <img class="img-cart" src="./img/canopyboy.JPG" alt="canopy" />
+          <div class="content">
+            <h3>Canopy una línea</h3>
+            <span class="price">s/40.00 por persona</span>
+          </div>
+        </div>
+        <!--.box-->
+
+        <div class="box">
+          <img class="img-cart" src="./img/canopyDos.JPG" alt="canopyDos" />
+          <div class="content">
+            <h3>Canopy dos líneas</h3>
+            <span class="price">s/50.00 por persona</span>
+          </div>
+        </div>
+        <!--.box-->
+
+        <div class="box">
+          <img class="img-cart" src="./img/cuatrimoto.JPG" alt="cuatrimoto" />
+          <div class="content">
+            <h3>Cuatrimoto Doble</h3>
+            <span class="price">s/40.00 por persona</span>
+          </div>
+        </div>
+        <!--.box-->
+        <div class="box">
+          <img class="img-cart" src="./img/rappel.JPG" alt="rappel" />
+          <div class="content">
+            <h3>Rappel</h3>
+            <span class="price">s/35.00 por persona</span>
+          </div>
+        </div>
+        <!--.box-->
+
+        <a href="#" class="btn">Ver más</a>
+      </div>
+
+      <form action="" class="login-form">
+        <h3>User</h3>
+        <div class="container_login">
+          <input type="email" placeholder="your email" class="box" />
+          <input
+            type="password"
+            placeholder="your password"
+            class="box"
+            id="password"
+          />
+
+          <i class="fa-solid fa-eye active" onclick="mostrarContrasena()"></i>
+          <i class="fa-solid fa-eye-slash" onclick="mostrarContrasena()"></i>
+        </div>
+        <p>forget your password <a href="#">Click here</a></p>
+        <p>don't have an account <a href="#">Create now</a></p>
+        <input type="submit" value="login now" class="btn background" />
+      </form>
+    </header>
+    <!-- header fin -->
+    <main>
+      <section class="redes">
+        <div class="media-icons">
+          <a href="https://web.facebook.com/MJ-Adventure-Lunahuan%C3%A1-105332245187940" class="fb" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="in"><i class="fab fa-instagram"></i></a>
+          <a href="https://web.facebook.com/messages/t/105332245187940" class="msg" target="_blank"
+            ><i class="fa-brands fa-facebook-messenger"></i
+          ></a>
+          <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </section>
+
+      <!-- sliderportada-inicio -->
+      <section class="home">
+        <img class="img-slider active" src="./img/portada1.jpg" alt="portada" />
+        <img class="img-slider" src="./img/portada2.png" alt="portada2" />
+        <img class="img-slider" src="./img/portada3.jpg" alt="portada3" />
+
+        <div class="contentSlider active">
+          <h1>Disfruta del<br /><span>Canotaje</span></h1>
+          <p>
+            El miedo es la más grande discapacidad de todas, por eso ATRÉVETE y
+            siente la seguridad con nosotros.
+          </p>
+          <!-- <a href="#">Leer más</a> -->
+        </div>
+
+        <div class="contentSlider">
+          <h1>Diviérte en<br /><span>Lunahuaná</span></h1>
+          <p>
+            Si relajarte es lo que necesitas, pues visítanos en nuestra hermosa
+            tierra de Lunahuaná y pasa un grandioso fin de semana.
+          </p>
+          <!-- <a href="#">Read More</a> -->
+        </div>
+
+        <div class="contentSlider">
+          <h1>Disfruta tu<br /><span>Aventura</span></h1>
+          <p>
+            Disfruta de la compañía del sol, de los maravillosos deportes y del
+            gran paisaje que encontrarás en el maravilloso pueblo de Lunahuaná.
+          </p>
+          <!-- <a href="#">Read More</a> -->
+        </div>
+
+        <div class="slider-navigation">
+          <div class="nav-btn active"></div>
+          <div class="nav-btn"></div>
+          <div class="nav-btn"></div>
+        </div>
+      </section>
+    </main>
+    <!-- sliderportada-fin -->
+    <div class="container-padding">
+      <!-- section-sobre nosotros -->
+      <section class="sobreNosotros" id="sobrenosotros"  data-aos="fade-left"  >
+        <div class="sub-title"><h2>Sobre Nosotros</h2></div>
+        <p >
+          Somos una pequeña empresa familiar que ofrece distintos deportes de
+          aventura y paseos turísticos en el distrito de Lunahuaná - Cañete, un
+          lugar conocido turísticamente por su hermoso clima, por ser tranquilo
+          y sobretodo por su gran paisaje natural. <br />
+          Nuestro propósito principal es brindarle una gran aventura y sobretodo
+          seguridad para que pueda guardarlo en sus mejores recuerdos. <br />
+          <span>¡ Siéntase seguro con nosotros y visítenos !</span>
+          <img data-aos="zoom-in" src="./img/agencia.jpg" alt="img_agencia" />
+        </p>
+      </section>
+      <!-- section-sobre nosotros -->
+      <!-- section seguridad -->
+      <section class="seguridad"  data-aos="fade-up" >
+        <div class="sub-title"><h2>Contamos con la mejor seguridad</h2></div>
+        <div class="sub-title">
+          <p>
+            Contamos con guías que tienen más de 10 años de experiencia y
+            equipos renovados para su salvaguardar.
+          </p>
+        </div>
+        <div class="sub">
+          <div>
+            <p>Casco</p>
+            <figure>
+              <img src="./img/casco.webp" alt="casco" />
+            </figure>
+            <p>Todos los deportes</p>
+          </div>
+          <div >
+            <p>Remo</p>
+            <figure>
+              <img src="./img/remo.webp" alt="remo" />
+            </figure>
+            <p>Canotaje</p>
+          </div>
+          <div>
+            <p>Guía</p>
+            <figure>
+              <img src="./img/guia.webp" alt="guia" />
+            </figure>
+            <p>Canotaje- cuatrimoto- tour</p>
+          </div>
+          <div >
+            <p>Certificaciones</p>
+            <figure>
+              <img src="./img/certificado.webp" alt="certificado" />
+            </figure>
+            <p>Aprobado por MINCETUR</p>
+          </div>
+        </div>
+      </section>
+      <!-- section seguridad termina -->
+
+      <!-- section gallery -->
+      <section class="gallery" data-aos="fade-down">
+        <div class="sub-title"  ><h2>Deportes de Aventura en Lunahuaná</h2></div>
+        <div class="sub-title">
+          <p>
+            Relájate con los diferentes deportes de aventura como el canotaje,
+            canopy, cuatrimotos, entre otros. <br />
+            Despeja tu mente y diviértete con nosotros en el hermoso valle de
+            Lunahuaná
+          </p>
+        </div>
+        <div class="gallery-container" data-aos="fade-up" >
+          <div class="gallery__item" >
+            <img src="img/galeria1.jpg" alt="" class="gallery__img" />
+          </div>
+          <div class="gallery__item" >
+            <img src="img/galeria2.jpg" alt="" class="gallery__img" />
+          </div>
+          <div class="gallery__item" >
+            <img src="img/galeria3.jpg" alt="" class="gallery__img" />
+          </div>
+          <div class="gallery__item" >
+            <img src="img/galeria4.jpg" alt="" class="gallery__img" />
+          </div>
+          <div class="gallery__item" >
+            <img src="img/galeria5.jpg" alt="" class="gallery__img" />
+          </div>
+          <div class="gallery__item" >
+            <img src="img/galeria6.jpg" alt="" class="gallery__img" />
+          </div>
+          <div class="gallery__item" >
+            <img src="img/galeria7.jpg" alt="" class="gallery__img" />
+          </div>
+          <div class="gallery__item" >
+            <img src="img/galeria8.jpg" alt="" class="gallery__img" />
+          </div>
+          <div class="gallery__item" >
+            <img src="img/galeria9.jpg" alt="" class="gallery__img" />
+          </div>
+        </div>
+      </section>
+      <!-- section gallery termina -->
+      <!-- section testimonios -->
+      <section class="section-testimonio" >
+        <div class="sub-title" data-aos="fade-down"><h2>Testimonios</h2></div>
+        <div class="testimonials-carousel">
+          <div class="swiper-wrapper" data-aos="fade-right">
+            <!-- one -->
+            <div class="swiper-slide">
+              <div class="testi-item">
+                <div class="testi-avatar">
+                  <img src="./img/testi1.png" alt="cliente" />
+                </div>
+                <div class="testimonials-text-before">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="testimonials-text">
+                  <div class="listing-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p>
+                    Gracias a las agencia MJ aventura y diversión extrema por su
+                    gran servicio, sobre todo la atención que me brindaron en el
+                    canotaje y canopy. Excelente! Los recomiendo muchísimo.
+                  </p>
+                  <div class="testimonials-avatar"><h3>Diana Carbonel</h3></div>
+                </div>
+                <!-- .testimonials-text-->
+                <div class="testimonials-text-after">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+              </div>
+              <!-- .testi-item-->
+            </div>
+            <!-- .swiper-slide- one-->
+            <!-- two -->
+            <div class="swiper-slide">
+              <div class="testi-item">
+                <div class="testi-avatar">
+                  <img src="./img/testi2.png" alt="cliente" />
+                </div>
+                <div class="testimonials-text-before">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="testimonials-text">
+                  <div class="listing-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p>
+                    Excelente servicio del canotaje. Los chicos de la cultura
+                    estamos muy contentos por la experiencia. Gracias por todo,
+                    realmente fue un gran servicio, están super
+                    recomendadísimos.
+                  </p>
+                  <div class="testimonials-avatar"><h3>John Doe</h3></div>
+                </div>
+                <!-- .testimonials-text-->
+                <div class="testimonials-text-after">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+              </div>
+              <!-- .testi-item-->
+            </div>
+            <!-- .swiper-slide- two-->
+            <!-- three -->
+            <div class="swiper-slide">
+              <div class="testi-item">
+                <div class="testi-avatar">
+                  <img src="./img/testi3.png" alt="cliente" />
+                </div>
+                <div class="testimonials-text-before">
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="testimonials-text">
+                  <div class="listing-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <p>
+                    Disfrutamos de nuestra estadía este fin de semana en el
+                    hermoso Lunahuaná y sobretodo nos sentimos muy contentos por
+                    el gran servicio brindado en canotaje y paseo turístico.
+                    Gracias, los recomiendo!
+                  </p>
+                  <div class="testimonials-avatar">
+                    <h3>Fiorella Sánchez</h3>
+                  </div>
+                </div>
+                <!-- .testimonials-text-->
+                <div class="testimonials-text-after">
+                  <i class="fa fa-quote-right"></i>
+                </div>
+              </div>
+              <!-- .testi-item-->
+            </div>
+            <!-- .swiper-slide- three-->
+          </div>
+          <!-- .swiper-wrapper -->
+        </div>
+        <!-- .testimonials-carousel-->
+      </section>
+    </div>
+    <!--.container-padding-->
+    <!-- section ubicacion -->
+    <div class="ubicacion">
+      <div class="titulo">
+        <p>Ubicanos en Lunahuaná</p>
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d243.00955300439674!2d-76.14160648364557!3d-12.962069519885972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1655104444634!5m2!1ses-419!2spe"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <!-- section ubicación-termina -->
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <img class="logofooter" src="./img/logotrans1.png" alt="logo" />
+          </figure>
+        </div>
+
+        <div class="box box-text">
+          <h3>Información</h3>
+          <p>Encuéntranos en Sta. Rosa Lunahuaná- Cañete</p>
+          <h3>Horario de atención</h3>
+          <p>08: 00 am - 05:00pm</p>
+          <h3>Llámanos</h3>
+          <p>994 726 609</p>
+        </div>
+        <div class="box">
+          <h3>Código QR yape</h3>
+          <img class="codigoqr" src="./img/qr.png" alt="visa" />
+
+          <h3>Medios de Pago</h3>
+          <figure class="pagos">
+            <img src="./img/visa.png" alt="visa" />
+            <img src="./img/yape.png" alt="visa" />
+          </figure>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; 2022 <b>MJ</b> - Todos los derechos reservados</small>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+    
+  </body>
+</html>
