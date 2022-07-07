@@ -70,9 +70,12 @@ body.dark p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--white);
+    background-color: transparent;
     box-shadow: var(--box-shadow);
     padding: 1rem 2rem;
+}
+.header.active{
+    background: yellow;
 }
 /* dark-header */
 body.dark .header{
@@ -311,12 +314,12 @@ body.dark .header .icons .boton-menu{
     box-shadow: var(--box-shadow);
     width: 30rem;
     background: var(--white);
-    padding: 1rem;
-    transition: .3s linear;
+    padding: 2rem;
+    transition: .2s linear;
 }
 .header .shopping-cart.active{
     right: 2rem;
-    transition: .3s linear;
+    transition: .2s linear;
 }
 /* mododark-cart */
 body.dark .header .shopping-cart.active{

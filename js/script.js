@@ -10,7 +10,7 @@ btnSwitch.addEventListener("click", ()=>{
 let shoppingCart=document.querySelector(".shopping-cart");
 document.querySelector("#cart-btn").onclick =()=>{
 shoppingCart.classList.toggle("active");
-body.classList.toggle("active");
+// body.classList.toggle("active");
   // se desactiva
 
 loginForm.classList.remove("active");
@@ -20,7 +20,7 @@ navbar.classList.remove("active");
 let loginForm=document.querySelector(".login-form");
 document.querySelector("#login-btn").onclick =()=>{
 loginForm.classList.toggle("active");
-body.classList.toggle("active");
+// body.classList.toggle("active");
   // se desactiva
 
 shoppingCart.classList.remove("active");
